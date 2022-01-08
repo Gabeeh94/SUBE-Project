@@ -10,14 +10,14 @@ After you get the PDF you can run the "PDF to csv" script. It uses the pdf2image
 
 ## How to use it
 
-It is required to have installed geckodriver for Selenium to be able to interact with Firefox, as well as the modules used by the scripts.
+- It is required to have installed geckodriver for Selenium to be able to interact with Firefox, as well as the modules used by the scripts.
 
-https://github.com/mozilla/geckodriver/releases
+   https://github.com/mozilla/geckodriver/releases
 
-Then, you need a user and password to a linked SUBE card. You can link an existing SUBE card in this link: https://tarjetasube.sube.gob.ar/SubeWeb/Webforms/Account/Views/login.aspx?msg=1
+- You need a user and password to a linked SUBE card. You can link an existing SUBE card in this link: https://tarjetasube.sube.gob.ar/SubeWeb/Webforms/Account/Views/login.aspx?msg=1
 
-Those credentials have to be replaced in the "SUBE scrape.py" file as shown here:
+- The credentials have to be replaced in the "SUBE scrape.py" file as shown here:
 
 ![Write your user and password](https://user-images.githubusercontent.com/62768516/148650205-37112aeb-f6f0-449e-b86a-8a94d0c880c5.png)
 
-After you ran the scraper, the you can use the pdf to csv script and you will end up with a csv
+- After you ran the scraper, the you can use the pdf to csv script and you will end up with a .csv file and the PDF
