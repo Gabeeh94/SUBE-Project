@@ -37,12 +37,12 @@ driver.get("https://tarjetasube.sube.gob.ar/SubeWeb/Webforms/Account/Views/login
 main_page = driver.current_window_handle
 
 #Find and fill credentials
-DNI = driver.find_element_by_id("txtDocumento").send_keys("19064900")
+DNI = driver.find_element_by_id("txtDocumento").send_keys("Insert DNI")
 
 #Wait a second to fill the next credential to not alert the captcha
 time.sleep(2)
 
-password = driver.find_element_by_id("txtPassword").send_keys("9400")
+password = driver.find_element_by_id("txtPassword").send_keys("Insert pass")
 
 time.sleep(2)
 
