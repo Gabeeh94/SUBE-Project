@@ -5,6 +5,7 @@ from pdf2image import convert_from_path
 import csv
 import os
 import fnmatch
+import re
 
 def process_images(image):
             
@@ -92,6 +93,23 @@ for page in pages:
     
     image_counter = image_counter + 1
 
+#Clean the values list from non numeric characters, transform it to float form and appends it to a list
+
+clean_values = []
+
+for values in value:
+    non_decimal = re.compile(r'[^\d\,\-]+')
+    new_value = non_decimal.sub('', values)
+    new_value = new_value.replace(',','.')
+    if new_value == '':
+        clean_values.append(new_value)
+    else:
+        new_value = float(new_value)
+        if new_value<1000:
+            clean_values.append(new_value)
+        else:
+            clean_values.append(new_value/10)
+        
 
 
   #Creates a csv file            
@@ -100,7 +118,7 @@ if __name__ == '__main__':
         writer = csv.writer(csvfile)
         writer.writerow(['Date', 'Transaction Type', 'Means of Transportation', 'Value'])
         i=0
-        while i<=len(trans_type)-1 and i<=len(date)-1 and i<=len(means_of_transp)-1 and i<=len(value)-1:
-            writer.writerow([date[i],trans_type[i], means_of_transp[i], value[i]])
+        while i<=len(trans_type)-1 and i<=len(date)-1 and i<=len(means_of_transp)-1 and i<=len(clean_values)-1:
+            writer.writerow([date[i],trans_type[i], means_of_transp[i], clean_values[i]])
             i = i+1
 
