@@ -24,3 +24,4 @@ After you get the PDF you can run the "PDF to csv" script. It uses the pdf2image
 
 ## Power Bi
 
+![Power Bi example](images/SUBE-Power-Bi.jpg)
