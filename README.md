@@ -21,3 +21,6 @@ After you get the PDF you can run the "PDF to csv" script. It uses the pdf2image
    ![Write your user and password](https://user-images.githubusercontent.com/62768516/148650205-37112aeb-f6f0-449e-b86a-8a94d0c880c5.png)
 
 - After you ran the scraper, the you can use the pdf to csv script and you will end up with a .csv file and the PDF
+
+## Power Bi
+
