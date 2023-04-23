@@ -4,7 +4,7 @@ A Python scraper that access the SUBE's (Buenos Aires's public transportation sy
 
 ## How it works
 
-The scrape is done using python's Selenium module which opens the browser, fill the credentials and then scrapes the data. It allows a much faster collection of the data than by doing it by hand and is intended to be ran at periodical intervals to track the person's public transport use. The only donwside is that it sometimes alerts the captcha and you have to run it again.
+The scrape is done using python's Selenium module which opens the browser, fill the credentials and then scrapes the data. It allows a much faster collection of the data than doing it by hand and it is intended to be ran at periodical intervals to track the person's public transport use.
 
 ## How to use it
 
